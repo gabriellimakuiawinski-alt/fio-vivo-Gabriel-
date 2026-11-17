@@ -116,8 +116,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 
 footer p{margin:0}
 footer .previa{font-size:13px}
 
-/* marca d'água: camada fixa por cima de tudo, sem ocupar espaço nem bloquear cliques */
-.marca-dagua{position:fixed;inset:0;z-index:50;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22420%22%20height%3D%22260%22%3E%3Ctext%20x%3D%22210%22%20y%3D%22130%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20transform%3D%22rotate%28-24%20210%20130%29%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22700%22%20letter-spacing%3D%224%22%20fill%3D%22%232b2621%22%3EPR%C3%89VIA%20%C2%B7%20N%C3%83O%20VENDIDO%3C/text%3E%3C/svg%3E");background-repeat:repeat;opacity:.09}
+/* selo de prévia: fixo no canto, sem ocupar espaço nem bloquear cliques */
 .selo{position:fixed;bottom:12px;right:12px;z-index:51;pointer-events:none;background:#b3261e;color:#fff;font:500 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:7px 10px}
 .credito{border-top:1px solid var(--linho);margin-top:28px;padding-top:20px;font-size:14px}
 .credito a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--tinta)}
@@ -315,7 +314,6 @@ footer .previa{font-size:13px}
   </div>
 </footer>
 
-<div class="marca-dagua" aria-hidden="true"></div>
 <div class="selo">Prévia · não vendido</div>
 <div id="aviso" role="status" aria-live="polite"></div>
 
